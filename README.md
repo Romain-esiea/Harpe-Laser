@@ -13,7 +13,7 @@
 
 Les notes de musique par défaut sont : **DO, RÉ, MI, FA, SOL**.
 
-Il est possible de modifier ces notes dans le fichier **pitches.h**.
+Il est possible de modifier ces notes dans le fichier [pitches.h](pitches.h).
 
 ### Utilisation
 
