@@ -82,7 +82,7 @@ void loop()
 {
   unsigned long now = millis();
 
-  // --- Détection des cordes ---
+  // Détection des cordes
   for (uint8_t idx = 0; idx < nbCords; idx++)
   {
     int reading = analogRead(lightInPins[idx]);
@@ -107,7 +107,7 @@ void loop()
     }
   }
 
-  // --- Expiration des cordes ---
+  // Expiration des cordes
   for (uint8_t idx = 0; idx < nbCords; idx++)
   {
     if (cordeActiveSon[idx] && now >= cordeEndTime[idx])
@@ -117,7 +117,7 @@ void loop()
     }
   }
 
-  // --- Calcul fréquence moyenne + ratio de fondu moyen ---
+  // Calcul fréquence moyenne + ratio de fondu moyen
   uint8_t activeCount = 0;
   long sumNotes = 0;
   float sumRatio = 0.0;
@@ -136,7 +136,7 @@ void loop()
     }
   }
 
-  // --- Application du son avec fondu via TimerFreeTone ---
+  // Application du son avec fondu via TimerFreeTone
   if (activeCount == 0)
   {
     delay(20);
