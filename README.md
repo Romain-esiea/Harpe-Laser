@@ -1,25 +1,29 @@
-# Harpe-Laser
-Projet Scientifique et Technique Harpe Laser
+# Harpe Laser
 
+## Projet Scientifique et Technique : Harpe Laser
 
+### Configuration
 
-# Configuration 
-Connecter la carte arduino à un ordinateur disposant du code arduino.
+1. Connectez la carte Arduino à un ordinateur contenant le code Arduino.
+2. Téléversez l'un des deux programmes disponibles :
 
-Téléverser parmi le code choisit parmi les deux disponibles : 
-- Le premier code joue un son plus fort, mais plus numérique. arduino_harpe-laser_numerique.ino
-- Le deuxième code permet de jouer un son plus proche d'une harpe avec un son régressif. arduino_harpe-laser_corde.ino
+   * **arduino_harpe-laser_numerique.ino** : produit un son plus puissant, mais au rendu plus numérique.
+   * **arduino_harpe-laser_corde.ino** : produit un son plus proche de celui d'une harpe, avec une décroissance progressive de la note.
+3. Une fois le programme téléversé, attendez la phase de calibration des photorésistances. Pendant cette étape, veillez à ne pas obstruer les faisceaux lumineux.
 
-Lorsque vous avez téléversé le code, attendez le calibrage des photo résistences (ne pas obstruer les faisceaux lumineux).
+Les notes de musique par défaut sont : **DO, RÉ, MI, FA, SOL**.
 
-Les notes de musique initiales sont DO RÉ MI FA SOL.
-Il est possible de modifier ces notes à l'aide du fichier pitches.h.
+Il est possible de modifier ces notes dans le fichier **pitches.h**.
 
-# Utilisation
-Joue un son lorsque vous relachez la corde, plus vous bloquer le laser longtemps, plus la note sera longue (min 300/500 ms | max 2000ms)
+### Utilisation
 
-Lorsque plusieurs notes sont jouées en même temps, vous entendrez la moyenne fréquentielle de ces notes.
+Un son est joué lorsque vous relâchez une corde laser. Plus le faisceau est interrompu longtemps, plus la note jouée sera longue :
 
+* Durée minimale : **300 à 500 ms**
+* Durée maximale : **2000 ms**
 
-## Avertissement ⚠
-Attention à ne pas regarder les lasers dans les yeux ! 💥
+Lorsque plusieurs notes sont jouées simultanément, vous entendrez une fréquence correspondant à la moyenne des notes jouées.
+
+### Avertissement ⚠️
+
+Ne regardez jamais directement les faisceaux laser afin d'éviter tout risque de blessure aux yeux.
