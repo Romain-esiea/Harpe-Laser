@@ -112,7 +112,7 @@ void loop()
     }
   }
 
-  // --- Gestion de la fin de son (respect MIN/MAX) ---
+  // Gestion de la fin de son (respect MIN/MAX)
   for (uint8_t idx = 0; idx < nbCords; idx++)
   {
     if (cordeActiveSon[idx] && now >= cordeEndTime[idx])
@@ -123,7 +123,7 @@ void loop()
     }
   }
 
-  // --- Calcul de la fréquence cible ---
+  // Calcul de la fréquence cible
   uint8_t activeCount = 0;
   long sumNotes = 0;
 
@@ -154,7 +154,7 @@ void loop()
     targetFrequency = sumNotes / activeCount;  // moyenne simple
   }
 
-  // --- Application du son sans spam ---
+  // Application du son sans spam
   if (targetFrequency != currentFrequency)
   {
     currentFrequency = targetFrequency;
