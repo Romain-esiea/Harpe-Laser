@@ -12,6 +12,8 @@ Téléverser parmi le code choisit parmi les deux disponibles :
 
 Lorsque vous avez téléversé le code, attendez le calibrage des photo résistences (ne pas obstruer les faisceaux lumineux).
 
+Les notes de musique initiales sont DO RÉ MI FA SOL.
+Il est possible de modifier ces notes à l'aide du fichier pitches.h.
 
 # Utilisation
 Joue un son lorsque vous relachez la corde, plus vous bloquer le laser longtemps, plus la note sera longue (min 300/500 ms | max 2000ms)
